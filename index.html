@@ -4,44 +4,32 @@
     <meta charset="UTF-8">
     <title>Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="./main.js"></script>
+    <style>
+      #terminal::after {
+        content: "_";
+        animation: blink 1s infinite;
+      }
+
+      @keyframes blink {
+        50% { opacity: 0; }
+      }
+    </style>
   </head>
+  <body class="bg-zinc-950 text-green-400 font-mono">
 
-<body class="bg-zinc-950 text-green-400 font-mono">
+    <main class="min-h-screen flex items-center justify-center p-4">
 
-  <main class="min-h-screen flex items-center justify-center p-4">
+      <div class="w-full max-w-2xl border border-zinc-700 rounded-xl overflow-hidden">
 
-    <div class="w-full max-w-2xl border border-zinc-700 rounded-xl overflow-hidden">
+        <div class="border-b border-zinc-700 p-3 text-zinc-400 text-sm">
+          jesse@portfolio:~
+        </div>
 
-      <div class="border-b border-zinc-700 p-3 text-zinc-400 text-sm">
-        jesse@portfolio:~
+        <div id="terminal" class="p-4 sm:p-6 text-sm sm:text-base whitespace-pre-wrap leading-relaxed"></div>
       </div>
 
-      <div class="p-4 sm:p-6 text-sm sm:text-base">
+    </main>
 
-        <p>$ whoami</p>
-        <p class="text-zinc-300 mb-3 sm:mb-4">
-          Jesse James
-        </p>
-
-        <p>$ status</p>
-        <p class="text-zinc-300 mb-3 sm:mb-4">
-          Building portfolio...
-        </p>
-
-        <p>$ projects</p>
-        <ul class="text-zinc-300 mb-4 space-y-1">
-          <li>• Bubble Tea TUI</li>
-          <li>• Terminal Chat App</li>
-          <li>• 2D Godot Engine Games</li>
-        </ul>
-
-        <p>$ _</p>
-
-      </div>
-
-    </div>
-
-  </main>
-
-</body>
+  </body>
 </html>
