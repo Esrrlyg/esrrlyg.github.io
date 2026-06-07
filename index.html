@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
 
     <script src="https://cdn.tailwindcss.com"></script>
@@ -11,15 +12,41 @@
   </head>
   <body class="bg-zinc-950 text-green-400 font-mono">
 
-    <main class="min-h-screen flex items-center justify-center p-4">
+    <main class="
+  min-h-screen
+  flex
+  items-start
+  md:items-center
+  justify-center
+  p-4
+">
 
-      <div class="w-full max-w-2xl border border-zinc-700 rounded-xl overflow-hidden">
+      <div class="
+        w-full
+        min-h-[calc(100vh-2rem)]
+        md:min-h-0
+        max-w-4xl
+        border
+        border-zinc-700
+        rounded-xl
+        overflow-hidden
+      ">
 
         <div class="border-b border-zinc-700 p-3 text-zinc-400 text-sm">
           jesse@portfolio:~
         </div>
 
-        <div id="terminal" class="p-4 sm:p-6 text-sm sm:text-base whitespace-pre-wrap leading-relaxed"></div>
+        <div
+          id="terminal"
+          class="
+            p-4
+            sm:p-6
+            text-base
+            md:text-lg
+            whitespace-pre-wrap
+            leading-relaxed
+          ">
+        </div>
       </div>
 
     </main>
